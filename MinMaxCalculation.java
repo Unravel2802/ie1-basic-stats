@@ -1,17 +1,17 @@
 public class MinMaxCalculation {
     public static void main(String[] args) {
-        int[] numbers = {3, 5, 7, 2, 8, 1, 4, 10, 6};
+        int[] numbers = {3, 7, 2, 9, 4, 1};
 
         int min = findMin(numbers);
         int max = findMax(numbers);
 
-        System.out.println("Minimum number: " + min);
-        System.out.println("Maximum number: " + max);
+        System.out.println("Minimum: " + min);
+        System.out.println("Maximum: " + max);
     }
 
-    public static int findMin(int[] nums) {
-        int min = nums[0];
-        for (int num : nums) {
+    public static int findMin(int[] numbers) {
+        int min = numbers[0];
+        for (int num : numbers) {
             if (num < min) {
                 min = num;
             }
@@ -19,9 +19,9 @@ public class MinMaxCalculation {
         return min;
     }
 
-    public static int findMax(int[] nums) {
-        int max = nums[0];
-        for (int num : nums) {
+    public static int findMax(int[] numbers) {
+        int max = numbers[0];
+        for (int num : numbers) {
             if (num > max) {
                 max = num;
             }
